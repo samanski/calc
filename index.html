@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src='scripts.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="form-error-msg">
+                <span id="formError"></span>
+            </div>
+
+            <div class="calc-wrapper">
+                <div class="calc-form">
+
+                    <div class="calc-header">
+                        <div class="calc-title">Loan Calculator</div>
+                    </div>
+
+                    <div class="calc-field car-price-field">
+                        <div class="field-title">Car Price: </div>
+                        <div class="field-input">
+                            $ <input type="number" id="carPrice" class="car-price-input" />
+                        </div>
+                    </div>
+
+                    <div class="calc-field down-payment-field">
+                        <div class="field-title">Down Payment: </div>
+                        <div class="field-input">
+                            $ <input type="number" id="downPayment" class="down-payment-input" />
+                        </div>
+                    </div>
+
+                    <div class="calc-field interest-field">
+                        <div class="field-title">Annual Interest: </div>
+                        <div class="field-input">
+                            <input type="number" id="interest" class="interest-input" /> %
+                        </div>
+                    </div>
+
+                    <div class="calc-field duration-field">
+                        <div class="field-title">Loan Duration: </div>
+                        <div class="field-input">
+                            <input type="number" id="years" class="years-input" /> Years
+                        </div>
+                        <div class="field-input">
+                            <input type="number" id="months" class="months-input" /> Months
+                        </div>
+                    </div>
+
+                    <div class="calc-btn">Calculate</div>
+
+                </div>
+            </div>
+
+            <table id="amortization-schedule">
+                <tr class="table-titles">
+                    <td class="title-month">Month</td>
+                    <td class="title-payment">Payment</td>
+                    <td class="title-interest">Interest</td>
+                    <td class="title-principal">Principal</td>
+                    <td class="title-intPaid">Interest Paid</td>
+                    <td class="title-balance">Remaining Balance</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

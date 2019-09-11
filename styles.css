@@ -1,0 +1,170 @@
+﻿body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 25px auto 100px;
+}
+
+.form-error-msg {
+    display: none;
+    background-color: #e3aab2;
+    color: #bd041d;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 10px;
+    margin: 0 0 30px 0;
+    border: 1px solid #bd041d;
+}
+
+.form-error-msg.show {
+    display: block;
+}
+
+.calc-form {
+    width: 500px;
+    background-color: #ccc;
+    padding: 25px;
+    margin: 30px auto;
+    border: 1px solid #999;
+    border-radius: 20px;
+}
+
+.calc-header {
+    background-color: #fff;
+    padding: 5px;
+    margin: 0 0 25px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.calc-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.calc-field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.field-title {
+    width: 40%;
+    display: inline-flex;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.field-input {
+    width: 60%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.field-input input {
+    width: 80%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: .75em;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 2px;
+}
+
+.interest-field .field-title {
+    width: 70%;
+}
+
+.interest-field .field-input {
+    width: 30%;
+}
+
+.duration-field .field-input {
+    width: 30%;
+    font-size: 1.15em;
+}
+
+.duration-field .field-input input {
+    width: 50px;
+    font-size: 1em;
+}
+
+.calc-btn {
+    width: 200px;
+    background-color: #d2dec8;
+    color: #4e8c1b;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 25px auto 0;
+    border: 1px solid #4e8c1b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.calc-btn:hover {
+    background-color: #3f7811;
+    color: #86c454;
+    border: 1px solid #306109;
+}
+
+#amortization-schedule {
+    display: none;
+    width: 100%;
+    text-align: center;
+    border: 5px solid #000;
+    border-spacing: 0;
+}
+
+#amortization-schedule.show {
+    display: table;
+}
+
+#amortization-schedule tr:nth-of-type(even) {
+    background-color: #f1f1f1;
+}
+
+#amortization-schedule tr.table-titles {
+    font-size: 1.25em;
+    font-weight: 600;
+    background-color: #ccc;
+}
+
+#amortization-schedule td {
+    text-align: right;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    border-right: 2px solid #000;
+}
+
+#amortization-schedule tr td:first-of-type {
+    text-align: center;
+}
+
+#amortization-schedule tr td:last-of-type {
+    border-right: none;
+}
+
+#amortization-schedule tr.table-titles td {
+    width: 18%;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid #000;
+    border-right: 2px solid #000;
+}
+
+#amortization-schedule tr.table-titles td.title-month {
+    width: 10%;
+}
+
+#amortization-schedule tr.table-titles td.title-balance {
+    border-right: none;
+}
